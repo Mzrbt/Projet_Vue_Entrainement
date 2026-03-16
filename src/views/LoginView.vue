@@ -8,6 +8,7 @@
 
     const email = ref("")
     const password = ref("")
+
     const emailError = ref("")
 
     const isFormValid = computed(() => {
@@ -32,7 +33,6 @@
         } catch (e) {
             window.alert("Identifiants incorrects")
             password.value = ''
-
         } finally {
             isLoading.value = false
         }
